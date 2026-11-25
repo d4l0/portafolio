@@ -1,0 +1,626 @@
+
+
+* { box-sizing: border-box; }      
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;                       
+  background-color: #171717;       
+  font-family: "Century Gothic", Arial, sans-serif;
+  color: #F4F0E8;
+  line-height: 1.6;
+}
+
+img { max-width: 100%; }           
+
+section {                          
+  padding: 60px 8%;                
+}
+
+.titulo-seccion {                  
+  margin: 0 0 30px;
+  font-family: "Century Gothic", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #F4F0E8;
+}
+
+.titulo-seccion::before {             
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
+  background-color: #B8D936;
+}
+
+.boton {                           
+  display: inline-block;
+  padding: 11px 26px;
+  border: 1px solid #FF5C35;
+  border-radius: 4px;
+  background-color: #FF5C35;
+  color: #171717;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.boton:hover {                     
+  background-color: #B8D936;
+  border-color: #B8D936;
+}
+
+
+.encabezado {
+  padding: 22px 8%;
+  background-color: #171717;
+}
+
+.logo {
+  display: inline-block;      
+  width: 35%;
+  vertical-align: middle;
+  color: #F4F0E8;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.insignia {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+  border-radius: 10px;
+  background-color: #FF5C35;
+  color: #171717;
+  font-weight: bold;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.menu {
+  display: inline-block;      
+  width: 64%;                 
+  vertical-align: middle;
+  text-align: right;          
+}
+
+.menu ul {
+  display: inline-block;      
+  margin: 0;
+  padding: 4px;
+  border: 1px solid #2A2A2A;
+  border-radius: 8px;
+  list-style: none;           
+}
+
+.menu li {
+  display: inline-block;      
+  margin-left: 6px;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 7px 16px;
+  border-radius: 6px;
+  color: #F4F0E8;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.menu a:hover {                
+  background-color: #7057D9;
+}
+
+.menu a.activo {
+  background-color: #FF5C35;
+  color: #171717;
+  font-weight: bold;
+}
+
+
+.hero {
+  height: auto;
+  padding: 90px 8%;
+  text-align: left;
+  color: #F4F0E8;
+  background-image: linear-gradient(to right, #171717 0%, #171717 35%, #FF5C35 100%);
+  background-size: cover;       
+  background-position: center;
+  border-bottom: 1px solid #2A2A2A;
+}
+
+.hero h1 {
+  margin: 0 0 12px;
+  font-family: "Century Gothic", Arial, sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #F4F0E8;
+}
+
+.hero p {
+  max-width: 520px;
+  margin: 0 0 18px;
+  color: #F4F0E8;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.hero-texto {
+  padding-right: 20px;
+  vertical-align: middle;
+}
+
+.hero .disponible {
+  margin-bottom: 12px;
+  color: #FF5C35;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.amarillo {
+  color: #B8D936;
+}
+
+.hero .amarillo {
+  color: #B8D936;
+}
+
+.rojo {
+  color: #FF5C35;
+}
+
+.verde {
+  color: #7057D9;
+}
+
+.hero .roles {
+  color: #F4F0E8;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hero .descripcion {
+  color: #F4F0E8;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.boton-borde {
+  border-color: #B8D936;
+  background-color: transparent;
+  color: #F4F0E8;
+}
+
+.ventana {
+  min-height: 300px;
+  padding: 22px;
+  border: 1px solid #2A2A2A;
+  border-radius: 14px;
+  background-color: #1A1A1A;
+  background-image: linear-gradient(to bottom, rgba(23, 23, 23, 0.22), rgba(23, 23, 23, 0.78)), url("img/fotografia-paisajes.jpeg");
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.puntos-ventana {
+  display: flex;
+  gap: 8px;
+}
+
+.punto {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.punto.rojo {
+  background-color: #FF5C35;
+}
+
+.punto.amarillo {
+  background-color: #B8D936;
+}
+
+.punto.verde {
+  background-color: #7057D9;
+}
+
+.ventana figcaption {
+  margin-top: 150px;
+  color: #F4F0E8;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+
+.sobre-mi {
+  border-top: 1px solid #2A2A2A;
+}
+
+.texto-sobre {
+  max-width: 780px;
+  color: #F4F0E8;
+}
+
+.etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.etiqueta {
+  display: inline-block;
+  padding: 6px 14px;
+  border: 1px solid #2A2A2A;
+  border-radius: 20px;
+  background-color: #1A1A1A;
+  color: #F4F0E8;
+  font-size: 13px;
+}
+
+.etiqueta.rojo {
+  border-color: #FF5C35;
+  color: #FF5C35;
+}
+
+.etiqueta.amarillo {
+  border-color: #B8D936;
+  color: #B8D936;
+}
+
+.etiqueta.verde {
+  border-color: #7057D9;
+  color: #7057D9;
+}
+
+.col2 {
+  display: inline-block;       
+  width: 48%;
+  margin: 0 1.5% 0 0;          
+  vertical-align: top;
+}
+
+.tarjeta {
+  display: inline-block;       
+  width: 31%;
+  margin: 0 1% 20px;           
+  vertical-align: top;
+  padding: 26px 20px;
+  border: 1px solid #2A2A2A;
+  border-radius: 8px;
+  background-color: #1A1A1A;
+  text-align: center;
+  transition: 0.3s;            
+}
+
+.tarjeta:hover {               
+  transform: translateY(-4px);
+  border-color: #FF5C35;
+}
+
+.tarjeta h3 {
+  margin: 14px 0 6px;
+  font-size: 16px;
+  color: #F4F0E8;
+}
+
+.tarjeta p {
+  margin: 0;
+  color: #F4F0E8;
+}
+
+
+.portafolio {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  border-top: 1px solid #2A2A2A;
+  background-color: #171717;
+}
+
+.portafolio .cabecera-seccion {
+  grid-column: 1 / -1;
+}
+
+.portafolio .titulo-seccion {
+  margin: 0;
+}
+
+.portafolio .tarjeta {
+  display: flex;
+  width: 100%;
+  min-height: 390px;
+  margin: 0;
+  padding: 14px;
+  flex-direction: column;
+  text-align: left;
+  overflow: hidden;
+}
+
+.portafolio .miniatura {
+  display: block;
+  width: 100%;
+  height: 280px;
+  margin: 0 0 16px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #1A1A1A;
+}
+
+.portafolio .miniatura img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.portafolio .tarjeta:hover .miniatura img {
+  transform: scale(1.035);
+}
+
+.portafolio .tarjeta h3 {
+  margin: 0 0 4px;
+  font-family: "Century Gothic", Arial, sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+.portafolio .categoria {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.portafolio .categoria.rojo { color: #FF5C35; }
+.portafolio .categoria.amarillo { color: #B8D936; }
+.portafolio .categoria.verde { color: #7057D9; }
+
+.portafolio .miniatura.documento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px dashed #2A2A2A;
+  color: #F4F0E8;
+  text-decoration: none;
+  background: linear-gradient(145deg, #171717, #1A1A1A);
+}
+
+.portafolio .documento-icono {
+  display: grid;
+  width: 92px;
+  height: 112px;
+  place-items: center;
+  border: 2px solid #FF5C35;
+  border-radius: 8px;
+  background: #FF5C35;
+  color: #171717;
+  font-family: "Century Gothic", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 8px 8px 0 #171717;
+}
+
+.portafolio .descargar {
+  align-self: flex-start;
+  margin-top: auto;
+  padding: 8px 14px;
+  border: 1px solid #B8D936;
+  border-radius: 20px;
+  color: #B8D936;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.portafolio .descargar:hover {
+  background: #B8D936;
+  color: #171717;
+}
+
+.contacto {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  border-top: 1px solid #2A2A2A;
+}
+
+.contacto-info {
+  max-width: 460px;
+}
+
+.contacto-info p {
+  color: #F4F0E8;
+}
+
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  display: block;
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #2A2A2A;
+  border-radius: 6px;
+  background-color: #1A1A1A;
+  color: #F4F0E8;
+  font-family: "Century Gothic", Arial, sans-serif;
+  font-size: 15px;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+  border-color: #FF5C35;
+}
+
+.contacto-form textarea {
+  resize: vertical;
+}
+
+.contacto-form button {
+  align-self: flex-start;
+  padding: 11px 26px;
+  border: 1px solid #FF5C35;
+  border-radius: 4px;
+  background-color: #FF5C35;
+  color: #171717;
+  font-family: "Century Gothic", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contacto-form button:hover {
+  border-color: #B8D936;
+  background-color: #B8D936;
+}
+
+.pie {
+  padding: 24px 8%;
+  border-top: 1px solid #2A2A2A;
+  text-align: center;
+}
+
+.derechos {
+  margin: 0;
+  color: #F4F0E8;
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .encabezado {
+    padding: 18px 5%;
+  }
+
+  .logo {
+    width: 29%;
+  }
+
+  .menu {
+    width: 70%;
+  }
+
+  .menu a {
+    padding: 7px 10px;
+  }
+
+  .menu li {
+    margin-left: 2px;
+  }
+
+  .col2 {
+    width: 48%;
+    margin-right: 1%;
+  }
+
+  .contacto {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .portafolio {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 580px) {
+  section {
+    padding: 48px 6%;
+  }
+
+  .encabezado {
+    padding: 20px 6%;
+    text-align: center;
+  }
+
+  .logo {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .menu {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu ul {
+    display: block;
+    width: 100%;
+  }
+
+  .menu li {
+    margin-left: 0;
+  }
+
+  .menu a {
+    padding: 7px 8px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 56px 6%;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-texto {
+    padding-right: 0;
+  }
+
+  .col2 {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .ventana {
+    min-height: 220px;
+    margin-top: 24px;
+  }
+
+  .ventana figcaption {
+    margin-top: 90px;
+  }
+
+  .contacto-form button {
+    align-self: stretch;
+  }
+
+  .portafolio {
+    grid-template-columns: 1fr;
+  }
+
+  .portafolio .miniatura {
+    height: 250px;
+  }
+}
